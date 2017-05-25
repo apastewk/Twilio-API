@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}Ask A Question{% endblock %}
+
+{% block body %}
+
+            <h1>Ask Us a Question</h1>
+            <br>
+            <form action="/" method="POST" role="form">
+                <div class="form-group">
+                    <label for="field-firstname"></label>
+                    <input type="text" name="firstname" placeholder="First Name" id-="field-firstname" autocomplete="on" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="field-lastname"></label>
+                    <input type="text" name="lastname" placeholder="Last Name" id-="field-lastname" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="field-number"></label>
+                    <input type="text" name="number" placeholder="Phone Number" id-="field-number">
+                </div>
+                <br>
+                 <div class="form-group">
+                    <label for="field-email"></label>
+                    <input type="text" name="email" placeholder="Email" id-="field-email">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="field-question"></label>
+                    <input type="text" name="question" placeholder="What is your Question?" id-="field-question">   
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="submit" value="Ask Question">
+                </div>
+            </form>
+
+{% endblock %}
